@@ -1,8 +1,12 @@
 <style>
        #body {
-           margin-top: 4%;
-            padding: 0;
-            background-color: #f8f9fa;
+        margin-top: 5%;
+        padding: 0;
+        background-image: url("static/body-background.jpg");
+        background-blend-mode:multiply;
+        background-color: #f8f9fa;
+        background-size: cover; /* Ensures the image covers the entire background area */
+        background-position: center; 
         }
         .profile-section {
             background-color: #ffffff;
@@ -15,7 +19,7 @@
             align-items: center;
         }
         #pid{
-            font-size: 18px;
+            font-size: 20px;
         }
         .upgrade-item {
             border-bottom: 2px solid #ccc;
