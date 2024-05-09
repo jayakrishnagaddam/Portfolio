@@ -1,10 +1,8 @@
 <style>
        #body {
-        margin-top: 5%;
+        margin-top: 0%;
         padding: 0;
         background-image: url("static/body-background.jpg");
-        background-blend-mode:multiply;
-        background-color: #f8f9fa;
         background-size: cover; /* Ensures the image covers the entire background area */
         background-position: center; 
         }
