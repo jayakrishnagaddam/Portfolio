@@ -12,7 +12,6 @@ def projects():
 def contactus():
     return render_template('contactus.html')
 
-
 @app.route('/papers')
 def papers():
     return render_template('papers.html')

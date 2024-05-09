@@ -1,5 +1,6 @@
 <style>
        #body {
+        
         margin-top: 0%;
         padding: 0;
         background-image: url("static/body-background.jpg");
@@ -85,6 +86,7 @@
        #aid{
         text-decoration: none;
         margin-left: 4%;
+        font-size: 22px;
        }
        .social-icons {
             color: #000;
