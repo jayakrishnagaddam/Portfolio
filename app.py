@@ -12,5 +12,10 @@ def projects():
 def contactus():
     return render_template('contactus.html')
 
+
+@app.route('/papers')
+def papers():
+    return render_template('papers.html')
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True)
