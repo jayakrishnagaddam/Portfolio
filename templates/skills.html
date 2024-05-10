@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    {% include 'bootstrap.html'%}
+    <style>
+        /* Custom CSS for skill bars */
+        .skill {
+            margin-bottom: 30px;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            margin-top: 8px;
+        }
+
+        /* Adjust progress bar colors */
+        .progress-bar {
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+        }
+
+        .progress-bar-html { background-color: #FF6B6B; }
+        .progress-bar-css { background-color: #FFBB43; }
+        .progress-bar-js { background-color: #3DC1D3; }
+        .progress-bar-python { background-color: #4BC6B9; }
+
+        /* Typography */
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .skill p {
+            font-family: 'Roboto', sans-serif;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4 text-center">Skills</h1>
+
+        <!-- Example technical skills -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4 text-center">Technical Skills</h2>
+                <div class="skill">
+                    <p class="skill-name">Python Full Stack Development</p>
+                    <p class="lead" style="font-size: 14px;">CSS,HTML,Bootstrap,Flask,MongoDB,Cloud & Python-ML</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-html" role="progressbar" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">AI with Machine & Deep Learning</p>
+                    <p class="lead" style="font-size: 14px;">Tensorflow, Pytorch, Neural Networks, Pipelines...</p>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-css" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">Python</p>
+                    <p class="lead" style="font-size: 14px;">For Web Developement & Programming.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">C Language</p>
+                    <p class="lead" style="font-size: 14px;">For Programming.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-html" role="progressbar" style="width: 85%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">.NET Frameworks with C#</p>
+                    <p class="lead" style="font-size: 14px;">For MVC Developement & Programming
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                
+                <!-- Add more skills as needed -->
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4 text-center">Non-Technical Skills</h2>
+                <div class="skill">
+                    <p class="skill-name">Communication</p>
+                    <p class="lead" style="font-size: 14px;">* * * * *</p>
+                   
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">Problem Solving</p>
+                    <p class="lead" style="font-size: 14px;">* * * *</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-html" role="progressbar progress-bar-html" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">Leadership</p>
+                    <p class="lead" style="font-size: 14px;">* * * * *</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-css" role="progressbar progress-bar-css" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">Critical Thinking</p>
+                    <p class="lead" style="font-size: 14px;">* * * *</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skill-name">Time Management</p>
+                    <p class="lead" style="font-size: 14px;">* * * * *</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-html" role="progressbar progress-bar-html" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

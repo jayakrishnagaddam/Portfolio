@@ -5,26 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certifications</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- You may need to adjust the path for the Bootstrap CSS file -->
-
-    <!-- Custom CSS -->
     <style>
-        /* Add your custom CSS here */
+        body {
+            background-image: url("static/certbg.jpg") !important;
+            background-size: cover;
+            animation: pulse 5s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
         .certification-card {
             margin-bottom: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            transform: translateY(-20px);
         }
+
+        .certification-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
         .certification-card .card-body {
             padding: 20px;
         }
+
         .certification-card h5 {
             font-size: 20px;
             margin-bottom: 10px;
         }
+
         .certification-card p {
             font-size: 16px;
             color: #666;
+        }
+
+        a, .btn {
+            transition: all 0.3s ease;
+        }
+
+        a:hover, .btn:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -34,16 +60,15 @@
             All Global and Non-Global Certifications done by Jaya Krishna...
          </p></h1>
 
-        <!-- Example certification card -->
         <div class="row">
             <div class="col-md-6">
                 <div class="card certification-card">
                     <div class="card-body">
-                        <h5 class="card-title">Tensorflow Developer</h5>
-                        <p class="card-text">Description: Tensorflow developer is a global Vertification that represents my skills in Machine Learning and Deep Learning.</p>
+                        <h5 class="card-title">Tensorflow Developer (Global)</h5>
+                        <p class="card-text">Description: The TensorFlow Developer Certificate validates proficiency in building machine learning models using TensorFlow.</p>
                         <p class="card-text">Date: April 2024</p>
-                        <a class="text-center btn btn-primary" href="static\Tensorflow Certificate.pdf">View Certificate</a>
-                        <!-- Add more details as needed -->
+                        <a class="text-center btn btn-warning" href="static\Tensorflow Certificate.pdf">View Certificate</a>
+                    
                     </div>
                 </div>
                 
@@ -51,10 +76,11 @@
             <div class="col-md-6">
                 <div class="card certification-card">
                     <div class="card-body">
-                        <h5 class="card-title">Certification Title</h5>
-                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, urna eu fringilla viverra, neque justo feugiat mi.</p>
-                        <p class="card-text">Date: January 2022</p>
-                        <!-- Add more details as needed -->
+                        <h5 class="card-title">Pytorch Developer (Coursera)</h5>
+                        <p class="card-text">Description: The PyTorch Developer Certificate certifies competency in creating machine learning solutions with PyTorch.</p>
+                        <p class="card-text">Date: March 2024</p>
+                        <a class="text-center btn btn-warning" href="static\Deep NN with Pytorch.pdf">View Certificate</a>
+                
                     </div>
                 </div>
                 
@@ -62,10 +88,13 @@
             <div class="col-md-6">
                 <div class="card certification-card">
                     <div class="card-body">
-                        <h5 class="card-title">Certification Title</h5>
-                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, urna eu fringilla viverra, neque justo feugiat mi.</p>
-                        <p class="card-text">Date: January 2022</p>
-                        <!-- Add more details as needed -->
+                        <h5 class="card-title">AZ-900_Microsoft Azure Fundementals (Global)</h5>
+                        <p class="card-text">Description: The Microsoft Azure Fundamentals certification demonstrates foundational knowledge of cloud services and how 
+                            to use Microsoft Azure for building and managing solutions.</p>
+                        <p class="card-text">Date: March 2023</p>
+                        <a class="text-center btn btn-warning" href="static\2100090162_AZURE 900.pdf">View Certificate</a>
+                        
+                        
                     </div>
                 </div>
                 
@@ -73,24 +102,35 @@
             <div class="col-md-6">
                 <div class="card certification-card">
                     <div class="card-body">
-                        <h5 class="card-title">Certification Title</h5>
-                        <p class="card-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, urna eu fringilla viverra, neque justo feugiat mi.</p>
-                        <p class="card-text">Date: January 2022</p>
-                        <!-- Add more details as needed -->
+                        <h5 class="card-title">Oracle Cloud Infrastructure (Global)</h5>
+                        <p class="card-text">Description: The Oracle Cloud Infrastructure certification confirms
+                             proficiency in designing, implementing, and managing solutions on the Oracle Cloud platform.</p>
+                        <p class="card-text">Date: August 2023</p>
+                        <a class="text-center btn btn-warning" href="static\2100090162_Oracle cloud Infra.pdf">View Certificate</a>
+        
                     </div>
                 </div>
                 
             </div>
         </div>
-
-        <p class="text-center" style="color: red;">Under Development!</p>
-
-        <!-- Add more certification cards using the same structure -->
     </div>
 
-    <!-- Bootstrap JS and dependencies (if needed) -->
+    <div id="loader" class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.getElementById('loader').style.display = "block";
+            } else {
+                document.getElementById('loader').style.display = "none";
+            }
+        };
+    </script>
 </body>
 </html>

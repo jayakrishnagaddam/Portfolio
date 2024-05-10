@@ -16,6 +16,10 @@ def certifications():
 def contactus():
     return render_template('contactus.html')
 
+@app.route('/skills')
+def skills():
+    return render_template('skills.html')
+
 @app.route('/papers')
 def papers():
     return render_template('papers.html')
