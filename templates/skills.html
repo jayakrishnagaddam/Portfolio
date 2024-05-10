@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-    {% include 'bootstrap.html'%}
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    {%include 'bootstrap.html'%}
     <style>
         /* Custom CSS for skill bars */
+        body{
+            background-image: url("static/skillsbg.jpg") !important;
+            
+            background-size:auto;
+        }
         .skill {
             margin-bottom: 30px;
         }
@@ -50,8 +57,11 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-5 mb-4 text-center">Skills</h1>
-
+        <h1 class="mt-3 text-center">Skillset
+        </h1>
+        <p class="lead text-center mb-5">
+           <b> My Technical and Non-Technical skillset...</b>
+         </p>
         <!-- Example technical skills -->
         <div class="row">
             <div class="col-md-6">
