@@ -38,6 +38,20 @@ def contactus():
 def skills():
     return render_template('skills.html')
 
+@app.route('/internships')
+def internships():
+    return render_template('internships.html')
+
+
+@app.route('/journey')
+def journey():
+    return render_template('journey.html')
+
+
+@app.route('/service')
+def service():
+    return render_template('service.html')
+
 @app.route('/papers')
 def papers():
     return render_template('papers.html')
